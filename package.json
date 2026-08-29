@@ -1,0 +1,57 @@
+{
+    "name": "bibtex-cleaner",
+    "displayName": "BibTeX Cleaner",
+    "description": "Find, select, comment and delete unused BibTeX references in LaTeX projects.",
+    "version": "0.1.0",
+    "publisher": "lmarco",
+    "license": "MIT",
+    "scripts": {
+        "package": "vsce package --allow-missing-repository"
+    },
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:bibtex"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "bibtexCleaner.menu",
+                "title": "BibTeX Cleaner",
+                "icon": "$(book)"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "bibtexCleaner.menu",
+                    "when": "resourceExtname == .bib",
+                    "group": "navigation@1"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "BibTeX Cleaner",
+            "properties": {
+                "bibtexCleaner.mainFile": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Optional main LaTeX file. Leave empty to detect it automatically."
+                },
+                "bibtexCleaner.bibFile": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Optional BibTeX file. Leave empty to use the currently opened .bib file."
+                }
+            }
+        }
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^3.9.2"
+    }
+}
