@@ -1,7 +1,7 @@
 
 # BibTeX Cleaner
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22902740.svg)]
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22902740.png)]
 (https://doi.org/10.5281/zenodo.22902740)
 
 A **VSCode-compatible** extension that analyzes LaTeX projects to **find unused BibTeX references** and lets you **comment them out or delete them** safely.
