@@ -1,10 +1,15 @@
 {
     "name": "bibtex-cleaner",
     "displayName": "BibTeX Cleaner",
+    "icon": "images/icon.png",
     "description": "Find, select, comment and delete unused BibTeX references in LaTeX projects.",
     "version": "0.1.0",
     "publisher": "lmarco",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Lourdesmarco/bibtexCleaner.git"
+    },
     "scripts": {
         "package": "vsce package --allow-missing-repository"
     },
