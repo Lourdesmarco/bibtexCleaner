@@ -4,7 +4,7 @@
     "icon": "images/icon.png",
     "description": "Find, select, comment and delete unused BibTeX references in LaTeX projects.",
     "version": "0.1.0",
-    "publisher": "lmarco",
+    "publisher": "loumarco",
     "license": "MIT",
     "repository": {
         "type": "git",
