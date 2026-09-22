@@ -3,7 +3,7 @@
     "displayName": "BibTeX Cleaner",
     "icon": "images/icon.png",
     "description": "Find, select, comment and delete unused BibTeX references in LaTeX projects.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "loumarco",
     "license": "MIT",
     "repository": {
