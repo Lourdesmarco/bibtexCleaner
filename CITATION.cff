@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or academic writing, please cite it as follows:"
+authors:
+  - family-names: "Marco"
+    given-names: "Lourdes"
+    orcid: "https://orcid.org/0000-0002-8455-9519" # Optional but highly recommended for academic visibility
+title: "BibTeX Cleaner: A VS Code extension for detecting and removing unused bibliography entries in LaTeX projects"
+version: 0.1.0 # Update this to match your latest release version (e.g., 1.2.3)
+date-released: 2024-09-22 # Update this to the date of your latest release (format: YYYY-MM-DD)
+url: "https://open-vsx.org/extension/loumarco/bibtex-cleaner"
+repository-code: "https://github.com/loumarco/bibtex-cleaner" # Update if your GitHub repository URL is different
+license: MIT # Update if you are using a different license (e.g., Apache-2.0, GPL-3.0)
+keywords:
+  - LaTeX
+  - BibTeX
+  - VS Code Extension
+  - Academic Writing
+  - Reference Management
+  - Open Source Software
