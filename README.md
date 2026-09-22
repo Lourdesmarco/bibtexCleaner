@@ -1,6 +1,24 @@
+
 # BibTeX Cleaner
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22902740.svg)]
+(https://doi.org/10.5281/zenodo.22902740)
+
 A **VS Code** extension that analyzes LaTeX projects to **find unused BibTeX references** and lets you **comment them out or delete them** safely.
+
+## Install
+
+<!-- Install BibTeX Cleaner from the [Visual Studio Code Marketplace](URL) or [Open VSX Registry](URL). -->
+
+Install BibTeX Cleaner from the [Open VSX Registry](https://open-vsx.org/extension/loumarco/bibtex-cleaner).
+If you use VSCodium or another Open VSX-compatible editor, you can install the extension directly from its Extensions view.
+
+
+## Why BibTeX Cleaner?
+
+Large LaTeX projects often accumulate bibliography entries that are no longer cited. Manually identifying them can be tedious, especially when citations are distributed across multiple `.tex` files.
+
+BibTeX Cleaner analyzes the project structure and identifies bibliography entries that are not referenced by the document, allowing users to review and safely comment or remove them.
 
 ## What it does
 
@@ -70,6 +88,15 @@ The parser handles nested braces `{}`, parentheses `()`, quoted strings and esca
 - A `.bak` copy of the `.bib` file is created automatically before any modification.
 - Operations require **explicit confirmation** in a modal dialog showing the affected references.
 - When **commenting**, entries are preserved wrapped in `@comment{...}` and can be restored manually.
+
+
+## Limitations
+
+BibTeX Cleaner does not compile the LaTeX project. Instead, it analyzes the source files and identifies bibliography entries referenced by recognized citation commands.
+
+Complex or custom citation commands not included in the supported list
+may require manual verification.
+
 
 ## License
 
